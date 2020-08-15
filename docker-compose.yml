@@ -1,0 +1,29 @@
+version: '3.7'
+
+networks:
+  net:
+    driver: bridge
+
+volumes:
+
+  ignite-data:
+    driver: local
+
+services:
+
+  ignite:
+    image: apacheignite/ignite:2.8.1
+    networks:
+      - net
+    ports:
+      - "10800"
+      - "47100"
+      - "47400"
+      - "47500"
+      - "31100-31200"
+      - "48100-48200"
+    volumes:
+      - ignite-data:/persistence
+      - ./etc/ignite:/etc/ignite
+    environment:
+      CONFIG_URI: /etc/ignite/config.xml

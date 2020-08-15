@@ -30,9 +30,10 @@ plugins {
   id("org.jlleitschuh.gradle.ktlint") version "9.3.0"
   id("org.jlleitschuh.gradle.ktlint-idea") version "9.3.0"
   id("com.github.ben-manes.versions") version "0.29.0"
+  id("dev.north.fortyone.intellij.run.generator") version "0.2.0"
 }
 
-group = "io.besu.plugin"
+group = "dev.north.fortyone.besu"
 
 allprojects {
   apply(plugin = "org.jlleitschuh.gradle.ktlint")

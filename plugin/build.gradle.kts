@@ -26,13 +26,19 @@ plugins {
 val besuVersion = "1.5.1"
 val tuweniVersion = "1.0.0"
 val picocliVersion = "4.2.0"
+val igniteVersion = "2.8.1"
 
-val pluginName = "besu-plugin"
+val coroutinesVersion = "1.3.8"
+
+val pluginName = "besu-storage-ignite"
 val pluginVersion = "0.1.0"
 
 dependencies {
 
   implementation(kotlin("stdlib"))
+
+  implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutinesVersion")
+  implementation("org.jetbrains.kotlinx:kotlinx-coroutines-jdk8:$coroutinesVersion")
 
   // Official Besu Plugin API (https://besu.hyperledger.org/en/stable/Concepts/Plugins/)
   implementation("org.hyperledger.besu:plugin-api:$besuVersion")
@@ -53,6 +59,10 @@ dependencies {
   // PicoCLI (https://picocli.info/)
   // For working with CLI
   implementation("info.picocli:picocli:$picocliVersion")
+
+  // Apache ignite
+  implementation("org.apache.ignite:ignite-core:$igniteVersion")
+  implementation("org.apache.ignite:ignite-spring:$igniteVersion")
 }
 
 tasks {
