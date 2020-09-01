@@ -1,4 +1,4 @@
-<h1 align="center">⚡ Besu Plugin Starter ⚡</h1>
+<h1 align="center">⚡ Besu Storage Ignite ⚡</h1>
 
 <p align="center">Kick-start your next Besu plugin!</p>
 
