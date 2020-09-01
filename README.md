@@ -4,37 +4,11 @@
 
 ## 💡 Introduction
 
-Do you want to create a [Besu plugin](https://besu.hyperledger.org/en/stable/Concepts/Plugins/) super fast? This template will help you get started!
-
-What is included:
-
-- generate fat `JARs` to distribute the plugin with ease.
-- easily check if all the various Besu dependencies are up to date.
-- ensure a consistent coding style with auto-formatting.
-
-Whilst this project is mainly geared towards Kotlin it can still be used with plain old Java.
-
-Bundled Gradle plugins:
-
-- [`ShadowJar`](https://github.com/johnrengelman/shadow) - For creating fat `JARs`.
-- [`Ktlint`](https://github.com/JLLeitschuh/ktlint-gradle) - For automatic formatting of Kotlin code.
-- [`Gradle Versions Plugin`](https://github.com/ben-manes/gradle-versions-plugin) - Determine which dependencies have updates
+TBW
 
 ## 🙈 Usage
 
-Simply fork this repository and start hacking away!
-
-Below is a summary of some useful `gradle` tasks that you will have at your disposal:
-
-| Target            | Description                                                     |
-|-------------------|-----------------------------------------------------------------
-| assemble          | Full `JAR` file in `build/distributions` as `.jar`.
-| assembleDist      | Creates `.zip` and `.tar` archives of the distribution contents.
-| distZip           | Full `JAR` file distribution in `build/distributions` as `.zip`.
-| distTar           | Full `JAR` file distribution in `build/distributions` as `.tar`.
-| ktlintFormat      | Formats automatically the code.
-| dependencyUpdates | Check if all dependencies are up to date.
-| tasks             | Display all available tasks.
+TBW
 
 
 ## 💻 Contribute
