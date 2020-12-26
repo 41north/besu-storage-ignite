@@ -12,7 +12,33 @@ This plugin allows to use [Apache Ignite](https://ignite.apache.org/) as the Key
 
 ## 🙈 Usage
 
-TBW
+First, clone this repository:
+
+```sh
+git clone git@github.com:41north/besu-storage-ignite.git
+```
+
+Open IntelliJ, load the project and type the following in the terminal:
+
+```sh
+./gradlew generateIntellijRunConfigs
+```
+
+That will generate [Intellij's Run Configuration](https://www.jetbrains.com/help/idea/run-debug-configuration.html) from the [`intellij-run-configs.yaml`](./intellij-run-configs.yaml) file with several useful commands (feel free to customize it as necessary).
+
+After the run configs are generated, next type the following in the terminal:
+
+```sh
+docker-compose up
+```
+
+That will start Apache Ignite. Next is to start Besu with one network by launching one of the following run config:
+
+- `BESU | Dev > Run`
+- `BESU | Ropsten > Run`
+- `BESU | Mainnet > Run`
+
+After that, you will see Key/Value entries being populated to Apache Ignite.
 
 ## 💻 Contribute
 
